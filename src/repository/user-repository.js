@@ -25,6 +25,13 @@ class UserRepository{
         }
 
     }
+    async getById(userId){
+        try{
+
+        }catch(error){
+            console.log("Something went wrong in the repository layer")
+        }
+    }
 }
 
 module.exports = UserRepository;
