@@ -40,6 +40,6 @@ module.exports = (sequelize, DataTypes) => {
   User.beforeCreate((user)=>{
     const encrptedPassword = bcrypt.hashSync(user.password,SALT);
     user.password = encrptedPassword;
-  })
+  });
   return User;
 };
